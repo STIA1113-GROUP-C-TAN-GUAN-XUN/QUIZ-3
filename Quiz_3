@@ -1,0 +1,99 @@
+package quizAndLabTest;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Quiz_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a,search;
+		Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+        int[] num = new int[size];
+      
+        do {
+            System.out.println("Menu ");
+            System.out.println("1. Accept elements of an array");
+            System.out.println("2. Display elements of an array");
+            System.out.println("3. Search the element within array given by the user");
+            System.out.println("4. Sort the array by using any sort method");
+            System.out.println("");
+            System.out.print("Please enter the number based on the menu: ");
+            a = sc.nextInt();
+            System.out.println("");
+        
+            switch (a){
+                case 1:
+                    scanArray(num);
+                    break;
+                case 2:
+                    displayArray(num);
+                    break;
+                case 3:
+                    System.out.print("Enter the number you want to search: ");
+                    int num1 = sc.nextInt();
+                    int index = searchingArray(num, num1);
+                    if (index == -1) {
+                        System.out.println("Error!!!");
+                    }
+                    else {
+                        System.out.println("Number found at index " + (index));
+                        System.out.println("");
+                    }
+                    break;
+                case 4:
+                    System.out.println("Array sorted :");
+                    sortingArray(num);
+                    System.out.println("");
+                    System.exit(0);
+                    break;
+            }
+        } while (a < 5);
+		
+	
+	}
+
+	
+	public static void scanArray(int[]num){
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Please enter the number of Array: ");
+		for(int x=0;x<num.length;x++) {
+			num[x] = sc.nextInt();
+			System.out.println("");
+		}
+		
+	}
+	
+	public static void displayArray(int[]num) {
+		
+		for(int y=0;y<num.length;y++) {
+			System.out.println(num[y] +"");
+		}
+	}
+	
+	public static int searchingArray(int[]num, int list) {
+		
+		for(int i=0;i<num.length;i++) {
+			if (num[i] == list) {
+				return i;
+			}
+			System.out.println("");
+		}
+		return -1;
+	}
+	
+	public static void sortingArray(int []num) {
+		Arrays.sort(num);
+		   for (int j = 0; j < num.length; j++) {
+		   System.out.print(num[j]);
+		   System.out.println("");
+		   };
+	}
+	
+}

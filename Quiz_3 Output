@@ -1,0 +1,66 @@
+Enter the size of the array: 6
+Menu 
+1. Accept elements of an array
+2. Display elements of an array
+3. Search the element within array given by the user
+4. Sort the array by using any sort method
+
+Please enter the number based on the menu: 1
+
+Please enter the number of Array: 
+51
+
+42
+
+63
+
+95
+
+88
+
+12
+
+Menu 
+1. Accept elements of an array
+2. Display elements of an array
+3. Search the element within array given by the user
+4. Sort the array by using any sort method
+
+Please enter the number based on the menu: 2
+
+51
+42
+63
+95
+88
+12
+Menu 
+1. Accept elements of an array
+2. Display elements of an array
+3. Search the element within array given by the user
+4. Sort the array by using any sort method
+
+Please enter the number based on the menu: 3
+
+Enter the number you want to search: 88
+
+
+
+
+Number found at index 4
+
+Menu 
+1. Accept elements of an array
+2. Display elements of an array
+3. Search the element within array given by the user
+4. Sort the array by using any sort method
+
+Please enter the number based on the menu: 4
+
+Array sorted :
+12
+42
+51
+63
+88
+95
